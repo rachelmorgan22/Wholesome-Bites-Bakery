@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/*.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: darkolivegreen;
+    padding: 2rem;
+} */
+
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: darkolivegreen;
+    padding: 2rem;
+}
+
+.rightNav{
+    display: flex;
+    gap: 1rem;
+    font-size: 11px;
+}
+
+.contactInfo{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 4rem;
+    flex-direction: column;
+}
+
+h2, h1{
+    font-family: "Darumadrop One", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.hours{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+@media (min-width: 700px) {
+    .contactInfo {
+        flex-direction: row;
+    }
+}

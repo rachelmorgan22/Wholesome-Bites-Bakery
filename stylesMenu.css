@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+
+body{
+    margin:0;
+    padding:0;  
+    box-sizing: border-box;
+}
+
+.navBar{
+    display:flex;
+    font-family: "Darumadrop One", sans-serif; 
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: white;
+    background-color: darkolivegreen;
+}
+
+.rightNav{
+    display: flex;
+    gap: 1rem;
+    font-size: 11px;
+}
+
+.navBarTwo{
+    font-family: "Darumadrop One", sans-serif; 
+    color:darkolivegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.menuItems{
+    color: darkolivegreen;
+
+}
+
+img{
+    height:160px;
+    width: 160px;
+    border-radius: 2rem;
+}
+
+.aMenuItem{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    background-color:beige;
+    border: solid lightgray;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.itemDescription{
+    display:flex;
+    flex-direction: column;
+}
+
+.itemTitle{
+    display: flex;
+    gap:20rem;
+    color: black;
+}
+
+.drinkTitle{
+    font-family: "Darumadrop One", sans-serif; 
+    font-weight: bold;
+}
+
+.drinkItem{
+    display: flex;
+    gap:2rem;
+}
+
+.drinksMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border: solid lightgray;
+    color: black;
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.menuItems{
+  display: flex;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Need to figure out how to add Media Queries to ensure responsivness */
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 1050px) {
+    .navBar {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    .rightNav {
+        flex-direction: column; /* Stack nav links vertically */
+        gap: 0.5rem;
+    }
+
+    .menuItems {
+        flex-direction: column; /* Stack menu items */
+        padding: 0; /* Remove padding */
+    }
+
+    .aMenuItem {
+        flex-direction: column; /* Stack image and description */
+        align-items: center; /* Center items */
+        margin: 0.5rem 0; /* Reduce margin */
+    }
+
+    img {
+        height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Full width on mobile */
+        max-width: 160px; /* Limit size */
+    }
+
+    .itemTitle {
+        gap: 0; /* Reset gap */
+        text-align: center; /* Center titles */
+    }
+
+    .drinkMenu {
+        width: 100%; /* Full width for drinks menu */
+        padding: 1rem; /* Add padding */
+    }
+
+    .drinkItem {
+        justify-content: space-between; /* Align price correctly */
+    }
+}
+
+/* Media query for smaller phones */
+@media (max-width: 480px) {
+    .navBar {
+        padding: 0.5rem; /* Reduce padding */
+    }
+
+    .navBarTwo h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .drinkTitle {
+        font-size: 1.2rem; /* Adjust drink title size */
+    }
+
+    .itemDescription {
+        font-size: 0.9rem; /* Smaller font size for descriptions */
+    }
+
+    .aMenuItem {
+        padding: 0.5rem; /* Less padding on items */
+    }
+}

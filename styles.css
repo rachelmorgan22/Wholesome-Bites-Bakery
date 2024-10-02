@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+ list-style-type: none;
+ display: flex;
+ gap:1rem;
+}
+
+.navBar{
+    display: flex;
+    font-family: "Darumadrop One", sans-serif; 
+    justify-content: space-between;
+    background-color: darkolivegreen;
+    color:white;
+    padding: 2rem;
+    margin-bottom: 6rem;
+}
+
+h1{
+    font-family: "Darumadrop One", sans-serif; 
+    color: darkolivegreen;
+}
+
+.topBodyHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+button{
+    font-family: "Darumadrop One", sans-serif; 
+    padding: 1rem;
+    color:white;
+    background-color: darkolivegreen;
+    display:inline-block;
+    border-radius: 1rem;
+    width: 150px;
+}
+
+.topImages{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.orangeCupCake{
+    height:600px;
+    width: 400px;
+    border-radius: 50px;
+    margin-left: 96px;
+    margin-right: 117px;
+    margin-top: 45px;
+}
+
+.seededBread{
+    height: 400px;
+    width: 700px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-top: 137px;
+}
+
+.bakery{
+   display: flex;
+   height: 462px;
+   margin: 96px auto 142px;
+   width: 100%; 
+   /* margin-top:  96px;
+   margin-bottom: 142px;
+   width: 100%; */
+} 
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/* Below code is from Chatgpt to help with overflow... It worked */
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .topImages {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center align images */
+    }
+
+    .orangeCupCake, .seededBread, .bakery {
+        width: 90%; /* Make images take most of the width */
+        margin: 0; /* Remove margins */
+    }
+}
+
+@media (max-width: 768px) {
+    .topImages {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center align images */
+    }
+
+    .orangeCupCake, .seededBread {
+        width: 80%; /* Slightly larger width */
+        margin: 0; /* Remove margins */
+    }
+}
+
+@media (max-width: 1024px) {
+    .topImages {
+        flex-direction: row; /* Align images horizontally */
+        justify-content: center; /* Center align images */
+    }
+
+    .orangeCupCake, .seededBread {
+        width: 45%; /* Allow two images side by side */
+        margin: 1rem; /* Add some margin for spacing */
+    }
+}
