@@ -28,3 +28,37 @@ The website consists of the following pages:
 - **Contact**: Contact information and a form for inquiries.
 
 ### Folder Structure
+/wholesome-bites-bakery ├── index.html ├── about/ │ └── index.html ├── menu/ │ └── index.html ├── contact/ │ └── index.html ├── css/ │ └── styles.css └── images/ └── [image files]
+
+
+## Updating Content
+To update text or images on any page, follow these steps:
+
+1. **Open the HTML File**: Use a code editor like Visual Studio Code to open the relevant HTML file (e.g., `index.html` for the homepage).
+2. **Edit Text**: Locate the text you want to change and edit it directly within the `<body>` section of the HTML file.
+3. **Update Images**: To change an image, replace the file in the `/images` folder with the new image (make sure it has the same name) or update the `<img>` tag in the HTML to point to a new image.
+
+## Images
+All images are stored in the `/images` folder. Make sure to optimize images for web use to improve loading speed.
+
+### Adding New Images
+1. Place the new image file in the `/images` folder.
+2. Update the HTML file to include the new image using the following format:
+   ```html
+   <img src="images/your-image-file.jpg" alt="Description of the image">
+   
+Troubleshooting
+404 Errors: If you encounter a 404 error, check the links in your navigation to ensure they point to the correct pages.
+Images Not Displaying: Verify that the image file names match those referenced in the HTML code and that they are located in the /images folder.
+FAQs
+Q: How do I change the background color of the website?
+A: Open the styles.css file and look for the body selector. Modify the background-color property to your desired color.
+
+Q: Can I add a new page?
+A: Yes! Create a new HTML file in the root directory or relevant folder, and link to it from the navigation menu in the existing HTML files.
+
+Contact Information
+If you have any questions or need further assistance, please contact me:
+
+Name: Rachel Morgan 
+Email: rachelmorgan134@hotmail.com
