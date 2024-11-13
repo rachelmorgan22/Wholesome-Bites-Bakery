@@ -18,7 +18,7 @@ Welcome to the Wholesome Bites Bakery website! This document provides essential 
 7. [Contact Information](#contact-information)
 
 ## Accessing the Website
-To access the Wholesome Bites Bakery website, use the following link: [Insert Live Link]. You can view it in any modern web browser (Chrome, Firefox, Safari).
+To access the Wholesome Bites Bakery website, use the following link: https://rachelmorgan22.github.io/Wholesome-Bites-Bakery/. You can view it in any modern web browser (Chrome, Firefox, Safari).
 
 ## Website Structure
 The website consists of the following pages:
